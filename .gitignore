@@ -30,4 +30,3 @@ build/
 
 ### VS Code ###
 .vscode/
-/src/main/java/com/midasin/jta/aspect/RoutingDataSourceAspect.java
