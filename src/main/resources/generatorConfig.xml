@@ -25,7 +25,7 @@
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
 
-        <javaModelGenerator targetPackage="com.midasin.jta.db.generate.model" targetProject="./src/main/java">
+        <javaModelGenerator targetPackage="com.midasin.sample.db.generate.model" targetProject="./src/main/java">
             <property name="enableSubPackages" value="false"/>
             <!--<property name="trimStrings" value="true" />-->
         </javaModelGenerator>
@@ -34,7 +34,7 @@
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
 
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.midasin.jta.db.generate.mapper"
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.midasin.sample.db.generate.mapper"
                              targetProject="./src/main/java">
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
