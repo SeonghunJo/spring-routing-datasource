@@ -1,17 +1,22 @@
 package com.midasin.jta.config;
 
-public class RoutingDataSourceContextHolder {
-    private static final ThreadLocal<Integer> context = new ThreadLocal<>();
+import lombok.extern.slf4j.Slf4j;
 
-    public static void set(Integer object) {
+@Slf4j
+public class RoutingDataSourceContextHolder {
+    private static final ThreadLocal<String> context = new ThreadLocal<>();
+
+    public static void set(String object) {
+        log.info("RoutingDataSource select key : {}", RoutingDataSourceContextHolder.get());
         context.set(object);
     }
 
-    public static Integer get() {
-        return 1;
+    public static String get() {
+        return context.get();
     }
 
     public static void clear() {
+        log.info("RoutingDataSource clear key : {}", RoutingDataSourceContextHolder.get());
         context.remove();
     }
 }

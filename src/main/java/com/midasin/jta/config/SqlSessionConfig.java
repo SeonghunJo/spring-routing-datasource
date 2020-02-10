@@ -74,7 +74,6 @@ public class SqlSessionConfig {
     @Bean
     public SqlSessionFactoryBean customerSqlSessionFactory(
             @Autowired @Qualifier("customerDataSource") DataSource customerDataSource) throws IOException {
-
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
         sqlSessionFactoryBean.setDataSource(customerDataSource);
 
